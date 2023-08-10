@@ -1,0 +1,35 @@
+
+/* Main Styles */
+main {
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #070707;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Footer Styles */
+
+/* Media Queries for Responsive Design (Adjust as needed) */
+@media screen and (max-width: 768px) {
+  .nav-items li {
+      display: block;
+      margin: 10px 0;
+  }
+}

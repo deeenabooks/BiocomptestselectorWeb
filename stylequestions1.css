@@ -1,0 +1,156 @@
+
+/* Content Styles */
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List Item Styles */
+li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Form Styles */
+#question-form {
+    margin-top: 20px;
+}
+
+#question-form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#question-form li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#question-form label {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#question-form .number {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+#question-form input,
+#question-form select {
+    padding: 2px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    flex: 1;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+#question-form .number + label,
+#question-form .number + select {
+    margin-left: 10px;
+}
+
+#question-form label + input,
+#question-form label + select {
+    margin-left: 10px;
+}
+
+
+
+/* Result Styles */
+
+/* Conclusion Table Styles */
+#user-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-style: bold;
+    font-weight: bold;  
+
+}
+#conclusion {
+    display: none;
+    margin-top: 15px;
+    height: 40%;
+    overflow: auto;
+
+}
+
+#conclusion h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+
+#conclusion-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid; /* Set the table border thickness */
+    font-size: 16px;
+    text-align: center;
+}
+
+#conclusion-table tr {
+    margin-bottom: 10px;
+}
+
+#conclusion-table th {
+    font-weight: bold;
+    border: 2px solid; /* Set the table header border thickness */
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+}
+
+#conclusion-table td {
+    border: 1px solid #313131; /* Set the table cell border thickness */
+    padding: 8px;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+}
+/* Button Styles for the form */
+button.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button.button:hover {
+    background-color: #313432; /* Header background color */
+}
+
+
+
+/* Media Queries for Responsive Design (Adjust as needed) */
+@media screen and (max-width: 768px) {
+    .nav-items li {
+        display: block;
+        margin: 10px 0;
+    }
+}

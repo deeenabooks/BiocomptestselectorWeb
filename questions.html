@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html   lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biocompatibility Test Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="stylequestions1.css">
+    <link rel="icon" type="image/png" href="healthcare.png">
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <img src="healthcare.png" alt="Biocompatibility test selector logo" class="logo">
+            <h1>Biocompatibility Test Selector  Questionnaire</h1>
+            <div class="header-right">
+                <a href="main1.html"><b>Main Paper</b></a>
+                <a href="flow2.png" alt="Flowchart"><b>Flowchart</b></a>
+                <a href="mainrefrences.html"><b>Main Resources</b></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="dentalimplant1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="hip.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="kneeimplant.jpg" alt="Slide 3">
+        </div>
+        <div class="slide fade">
+            <img src="stent.jpg" alt="Slide 5">
+        </div>
+    </div>
+
+
+    <main>
+        <section id="questionnaire">
+            <form id="question-form">
+                <ul>
+                    <li>
+                        <span class="number">0.</span>
+                        <label for="username">Enter your Username or Lab Name:</label>
+                        <input type="text" id="username" name="username" required>
+                    </li>
+                    
+                    <li>
+                        <span class="number">1.</span>
+                        <label for="name">Name of implant :</label>
+                        <input type="text" id="name" name="name" required>
+                    </li>
+
+                    <li>
+                        <span class="number">2.</span>
+                        <label for="duration">How long is the implant in contact with the body?</label>
+                        <select id="duration" name="duration" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="less_than_24_hours">Less than 24 Hours</option>
+                            <option value="24_hours_to_30_days">More than 24 hours but less than 30 days</option>
+                            <option value="more_than_30_days">More than 30 days</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <span class="number">3.</span>
+                        <label for="tissue_type_1">Is it in contact with blood?</label>
+                        <select id="tissue_type_1" name="tissue_type_1" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <span class="number">4.</span>
+                        <label for="tissue_type_2">Is it in contact with bone or other types of tissues?</label>
+                        <select id="tissue_type_2" name="tissue_type_2" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <span class="number">5.</span>
+                        <label for="orthopedic">Is it considered an orthopedic implant?</label>
+                        <select id="orthopedic" name="orthopedic" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <input type="submit" value="Submit" class="btn">
+            </form>
+            <button class="button" onclick="goBack()">Go Back</button>
+
+        </section>
+        
+        
+
+
+        <section id="conclusion" >
+            <h2>Conclusion</h2>
+            <div id="user-info"></div>
+            <table id="conclusion-table">
+
+            </table>
+        </section>
+            </main>
+
+    <footer>
+        <p>This is in accordance with Dana Haddadin's graduation project under the supervision of Dr. Walid Al-Zyoud</p>
+        <p>a part of completing the bachelor degree of biomedical engineering in German Jordanian University</p>
+        <p>&copy; 2023 ImplantCheck. All rights reserved.</p>
+        <p><i>This is only a framework of suggested tests based on the open-source documents from ISO-10993 and FDA-USA.</i></p>
+        <p><i>For more detail, check out the requirements needed by your country's organization</i></p>
+        <!-- Proper attribution for the biomedical icons -->
+        <p><a href="https://www.flaticon.com/free-icons/biomedical" title="Biomedical icons created by orvipixel - Flaticon">Biomedical icons created by orvipixel - Flaticon</a></p>
+    </footer>
+
+    <script>
+        function goBack() {
+            // Navigate back in the browser's history
+            window.history.back();
+        }
+    </script>
+
+<script src="answers.js"></script>
+<script src="slideshow.js"></script>
+
+</body>
+</html>
